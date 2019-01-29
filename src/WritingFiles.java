@@ -13,9 +13,9 @@ public class WritingFiles {
         write(names, "names-week11.txt");
         append(names, "names-week11.txt");
     }
-    private static void write(List<String> lines, String filrPath) {
+    private static void write(List<String> lines, String filePath) {
         try {
-            Path path = Paths.get(filrPath);
+            Path path = Paths.get(filePath);
             Files.write(path, lines);
         } catch (IOException e) {
             e.printStackTrace();
